@@ -1,0 +1,12 @@
+[package]
+name = "lab-planetas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Ventana en tiempo real (la misma que usaste en el Lab 2)
+minifb = "0.28"
+
+[profile.dev]
+# El renderer hace millones de cálculos por frame; sin esto corre muy lento en modo debug
+opt-level = 3
